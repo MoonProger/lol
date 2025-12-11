@@ -33,7 +33,7 @@ public class Browser {
                 System.out.println("Некорректное имя браузера: " + BROWSER_TYPE);
         }
         driver.manage().window().maximize();
-//        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(WAIT));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(WAIT));
         return driver;
     }
 
